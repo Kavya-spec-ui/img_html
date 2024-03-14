@@ -1,42 +1,18 @@
-function changeImage(x,image)
-{
-if (x==1)
-{image.src="img/rishic.png"}
-if (x==2)
-{image.src="img/rishiraj 1.png"}
-if (x==3)
-{image.src="img/anshikac.png"}
-if (x==4)
-{image.src="img/image 13.png"}
+function toggleNavbar() {
+  var menu = document.querySelector('.navbar-menu');
+  if (window.innerWidth <= 768) {
+      menu.classList.toggle('show');
+  } else {
+      menu.classList.remove('show');
+  }
+}
 
-if (x==5)
-{image.src="img/gauric.png"}
-if (x==6)
-{image.src="img/image 16.png"}
-if (x==7)
-{image.src="img/akhilc.png"
-image.style.width="305px"
-image.style.height="450px"}
-if (x==8)
-{image.src="img/image 6.png"}
-if (x==9)
-{image.src="img/samratc.png"}
-if (x==10)
-{image.src="img/image 3.png"}
-if (x==11)
-{image.src="img/nobelc.png"}
-if (x==12)
-{image.src="img/image 9.png"}}
+document.querySelector('.navbar-toggler').addEventListener('click', toggleNavbar);
 
-document.getElementById('navbar-toggler').addEventListener('click', function() {
-    var menu = document.getElementById('menu');
-    if (menu.style.display === 'block') {
-      menu.style.display = 'none';
-    } else {
-      menu.style.display = 'block';
-    }
-})
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 768) {
+      var menu = document.querySelector('.navbar-menu');
+      menu.classList.remove('show');
+  }
+});
 
-    document.querySelector('.menu-icon').addEventListener('click', function() {
-        this.classList.toggle('active');
-      })

@@ -258,23 +258,19 @@ display: flex;
 {
   align-items: center;
   justify-content: center;
-  width: 286px;
-  height: 423px;
+ 
+  height: 450px;
   justify-content:center ;
 
 }
 .anshika
 {
-  width: 220px;
-  height: 345px
+
+  height: 450px;
 
 }
-.gauri
-{
-  width: 232px;
-  height: 376px
 
-}
+
 .imgian-info
 {
     padding: 10px;
@@ -320,14 +316,8 @@ display: flex;
 {padding: 90px;
 padding-top: 0;
 color: #666666;}
-#exp1
-{
-    margin-top: -76px;
-}
-#exp2
-{
-    margin-top: -29px;
-}
+
+
 .background-blue2
 {
   
@@ -347,34 +337,34 @@ color: #666666;}
 }
 
 @media screen and (max-width: 768px) {
-
-  .grid-container
-  {
-  display: grid;
-  grid-template-columns: 1fr;
-  
-  
-  }
   .navbar-menu {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color:white;
+      width: 100%;
+      top: 60px;
+      left: 0;
+      text-align: center;
   }
 
-  .navbar-menu li {
-    margin-right: 0;
-    margin-bottom: 10px;
+  .navbar-menu.show {
+      display: block;
+  }
+
+  .navbar-menu a {
+      padding: 15px 0;
+      margin: 0;
+      display: block;
   }
 
   .navbar-toggler {
-    display: block;
+      display: block;
   }
+  .navbar-menu .symbol {
+    margin-left: 5px; 
+    vertical-align: middle; 
+}
 }
 
 
@@ -394,3 +384,87 @@ a
   
 }
 
+#p_image
+{
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+#p_image:hover {
+  filter: grayscale(0%);
+}
+#info_1
+{
+margin-top: -58px;
+}
+#info_2
+{
+  margin-top: -50px; 
+}
+#info_3
+{
+  margin-top: -52px;
+}
+#info_4
+{
+  margin-top:-22px ;
+}
+#info_5
+{margin-top: -17px;
+  
+}
+#info_6
+{
+  margin-top:-23px ;
+}
+#info_8
+{
+  margin-top:12px ;
+}
+#info_9
+{
+  margin-top:5px ;
+}
+
+#info_7
+{
+  margin-top:6px ;
+  
+
+}
+.end_bar_1
+{
+  width: 100vw;
+  height: 36px;
+  background-color: #E7E7E7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.left_side_footer
+{display: flex;
+  justify-content: space-between;
+  width:500px;
+  padding-left: 78px;
+
+
+}
+.right_side_footer
+{
+  width:fit-content;
+  padding-right:200px;
+}
+.last_bar
+{
+  width: 100vw;
+  height: 36px;
+  background-color:black;
+  display: flex;
+  align-items: center;
+}
+.content
+{
+  color:#EEEEEE;
+  padding-left: 78px;
+}
